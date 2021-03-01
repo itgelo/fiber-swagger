@@ -1,9 +1,9 @@
 package main
 
 import (
-	fiberSwagger "github.com/arsmn/fiber-swagger/v2"
-	_ "github.com/arsmn/fiber-swagger/v2/example/docs"
 	"github.com/gofiber/fiber/v2"
+	fiberSwagger "github.com/itgelo/fiber-swagger/v2"
+	_ "github.com/itgelo/fiber-swagger/v2/example/docs"
 )
 
 // @title Fiber Example API
