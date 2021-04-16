@@ -23,6 +23,7 @@ var Handler = New()
 
 // Config ...
 type Config struct {
+	DisplayInfo       string
 	DeepLinking       bool
 	ModelsExpandDepth int64
 	URL               string
@@ -31,6 +32,7 @@ type Config struct {
 // New returns custom handler
 func New(config ...Config) fiber.Handler {
 	cfg := Config{
+		DisplayInfo:       "block",
 		DeepLinking:       true,
 		ModelsExpandDepth: 1,
 	}
@@ -117,6 +119,10 @@ const indexTmpl = `
 		body {
 			margin:0;
 			background: #fafafa;
+		}
+
+		.information-container.wrapper {
+			display: {{.DisplayInfo}};
 		}
 	</style>
 </head>
