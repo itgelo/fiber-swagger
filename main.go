@@ -125,17 +125,39 @@ const indexTmpl = `
 			display: {{.DisplayInfo}};
 		}
 
-		.swagger-ui .markdown p {
+		.opblock-description .markdown h3,
+		.opblock-description .markdown ul li blockquote,
+		.opblock-description .markdown ul li blockquote p {
+			margin: 0;
+		}
+
+		.opblock-description .markdown ul {
+			padding-left: 14px;
+		}
+
+		.opblock-description .markdown ul li p {
+			margin-bottom: 6px;
+		}
+
+		.opblock-description .markdown ul li code {
+			padding: 2px 4px;
+		}
+
+		.opblock-description .markdown ul li ul li {
+			margin-top: 8px;
+		}
+
+		.parameters-col_description .markdown p {
 			margin-top: 0;
 			margin-bottom: 8px;
 		}
 
-		.swagger-ui .markdown p:not(:last-child) {
+		.parameters-col_description .markdown p:not(:last-child) {
 			margin-top: 2px;
 			margin-bottom: 14px;
 		}
 
-		.swagger-ui select {
+		.parameters-col_description select {
 			width: 100%;
 			max-width: 340px;
 			margin: 5px 0;
@@ -146,17 +168,17 @@ const indexTmpl = `
 			backgroundd-color: #fff;
 		}
 
-		.swagger-ui select[disabled] {
+		.parameters-col_description select[disabled] {
 			border-color: #d9d9d9;
 		}
 
-		.swagger-ui textarea:not(.curl) {
+		.parameters-col_description textarea:not(.curl) {
 			background: #fff;
 			max-width: 600px;
 			min-height: 120px;
 		}
 
-		.swagger-ui textarea:not(.curl)[disabled] {
+		.parameters-col_description textarea:not(.curl)[disabled] {
 			background-color: #fafafa;
 			color: #888;
 		}
