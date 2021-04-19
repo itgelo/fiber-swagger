@@ -135,7 +135,7 @@ const indexTmpl = `
 			margin-bottom: 14px;
 		}
 
-		.swagger-ui .markdown + select {
+		.swagger-ui select {
 			width: 100%;
 			max-width: 340px;
 			margin: 5px 0;
@@ -143,6 +143,22 @@ const indexTmpl = `
 			border: 1px solid #d9d9d9;
 			border-radius: 4px;
 			box-shadow: none;
+			backgroundd-color: #fff;
+		}
+
+		.swagger-ui select[disabled] {
+			border-color: #d9d9d9;
+		}
+
+		.swagger-ui textarea:not(.curl) {
+			background: #fff;
+			max-width: 600px;
+			min-height: 120px;
+		}
+
+		.swagger-ui textarea:not(.curl)[disabled] {
+			background-color: #fafafa;
+			color: #888;
 		}
 	</style>
 </head>
