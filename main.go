@@ -124,6 +124,26 @@ const indexTmpl = `
 		.information-container.wrapper {
 			display: {{.DisplayInfo}};
 		}
+
+		.swagger-ui .markdown p {
+			margin-top: 0;
+			margin-bottom: 8px;
+		}
+
+		.swagger-ui .markdown p:not(:last-child) {
+			margin-top: 2px;
+			margin-bottom: 14px;
+		}
+
+		.swagger-ui .markdown + select {
+			width: 100%;
+			max-width: 340px;
+			margin: 5px 0;
+			padding: 9px 10px;
+			border: 1px solid #d9d9d9;
+			border-radius: 4px;
+			box-shadow: none;
+		}
 	</style>
 </head>
 <body>
